@@ -11,19 +11,9 @@
 
 </head>
 
+  <h1> Tech Store</h1>
 
-    <header>
- 
-    <h1> Tech Store</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="">shop</a></li>
-                <li><a href ="contact.html">contact us</li>
-            </ul>
-        </nav>
-    </header>
-   
+
     <aside>
     <h2> Shop by: </h2>
     <section>
@@ -66,6 +56,7 @@
     		<label for="Message"> Message: </label> <textarea cols="30" rows="5" id="Message" name="message"> </textarea>
     		</div>
 
+        <!--
         <div>
             <label for="subject">Subject:</label>
 
@@ -90,6 +81,20 @@
             </select>
 
         </div>
+    -->
+    <div>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder= "Enter your subject" list="subjects">
+        <datalist id="subjects">
+            <option value="returns">
+            <option value="faulty item">
+            <option value="delivery">
+            <option value="order tracking">
+            <option value="advice">
+            <option value="others">
+        </datalist>
+
+    </div>
         <div>
             <p> Subscribe to Future Offers by: </p> 
             <label for="newsletter">NewsLetter</label>
@@ -110,7 +115,13 @@
             <input type="radio" id="emailResponse" name="response" value="email">
         </div>
 
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
     	</form>
+
+
 
     </main>
 
