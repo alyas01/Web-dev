@@ -57,14 +57,59 @@
     	<h1> Contact Us</h1>
     	<form action="" method="">
     		<div>
-    		Name: <input type="text" placeholder="Enter Your Name">
+    		<label for="name">Name: </label><input type="text" placeholder="Enter Your Name" id="name" name="name">
     	</div>
     	<div>
-    		Email: <input type="email" placeholder="Enter Your Email">
+    		<label for="Email"> Email: </label> <input type="email" placeholder="Enter Your Email" id="email" name="email" >
     	</div>
     	<div>
-    		Message: <textarea cols="30" rows="5"> </textarea>
+    		<label for="Message"> Message: </label> <textarea cols="30" rows="5" id="Message" name="message"> </textarea>
     		</div>
+
+        <div>
+            <label for="subject">Subject:</label>
+
+            <select id="Subject" > 
+
+            <optgroup label="Product Issues">
+                <option value="returns"> Returns</option>
+                <option value="Faulty_Item"> Faulty Item</option>
+            </optgroup>
+            
+            <optgroup label="Delivery">
+                <option value="Delivery_Info"> Delivery Info </option>
+                <option value="order_tracking"> Tracking my Order</option>
+                
+            </optgroup>
+
+            <optgroup label="Other">
+                <option value="advice"> Advice</option>
+                <option value="others"> Other</option>
+            </optgroup>
+            
+            </select>
+
+        </div>
+        <div>
+            <p> Subscribe to Future Offers by: </p> 
+            <label for="newsletter">NewsLetter</label>
+            <input type="checkbox" id="newsletter" value="newsletter" name="Subscribe">
+
+            <label for="email">Email</label>
+            <input type="checkbox" id="email" value="email" name="Subscribe"> 
+
+            <label for="post">Post</label>
+            <input type="checkbox" id="post" value="post" name="Subscribe"> 
+        </div>
+
+        <div> 
+            <p> How would you like to respond? </p>
+            <label for="phoneResponse">Phone</label>
+            <input type="radio" id="phoneResponse" name="response" value="phone">
+            <label for="emailResponse">Email</label>
+            <input type="radio" id="emailResponse" name="response" value="email">
+        </div>
+
     	</form>
 
     </main>
