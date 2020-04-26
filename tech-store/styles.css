@@ -12,14 +12,73 @@ html{
             background: grey; 
             color: white;
         }
+
+ul{
+    margin: 0;
+    padding: 0; 
+}
+
+li{
+    list-style: circle inside; 
+
+}
+
+a{
+    text-decoration: none; 
+    color: inherit; 
+
+}
+
+a:hover{
+    color:purple;
+}
+
+header li{
+    display: inline-block;
+}
+
+header h1, nav{
+    display: inline-block;
+}
+
+main{
+    width: 680px; 
+    display: inline-block;
+    padding: 10px;
+}
+
+aside{
+    width: 270px; 
+    display: inline-block;
+    vertical-align: top; 
+    padding: 10px; 
+}
  
  #name{
     background: red;
  }
 
 .product{
+    box-sizing: border-box;
     border: 1px solid grey; 
-    width: 200px; 
+    width: 210px; 
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.button{
+    padding: 10px; 
+    display: inline-block;
+}
+
+.button:last-of-type{
+    background: blue; 
+    color: white; 
+}
+
+p:first-of-type{
+    color: red; 
 }
 
 img{
