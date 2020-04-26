@@ -1,0 +1,27 @@
+
+html{
+            background: white; 
+        }        
+        body{
+            font-family: Impact, Charcoal, sans-serif;
+            background:white;
+            max-width: 1000px;
+            margin: 0 auto; 
+        }
+        header, footer{
+            background: grey; 
+            color: white;
+        }
+ 
+ #name{
+    background: red;
+ }
+
+.product{
+    border: 1px solid grey; 
+    width: 200px; 
+}
+
+img{
+    max-width:100%;
+}
