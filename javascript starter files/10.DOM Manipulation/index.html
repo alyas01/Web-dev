@@ -7,9 +7,30 @@
   <title>DOM Manipulation</title>
 </head>
 <body>
-
+	<p class="Hello"> Hello, <span id='username'>user</span></p>
+	<p class="Hello"> Hello, <span id='username'>user</span></p>
+	<img class="image">
+	<img class="image">
 
   <script>
+  	//getElementByID
+  	var name = "Misha"; 
+  	document.getElementById('username').innerHTML = name;
+  	document.getElementById('username').style.color = 'Red'; 
+
+//get elements by Class Name
+  	var test = document.getElementsByClassName('Hello')[1].style.color="Purple";  
+  	console.log(test); 
+
+  	//get elements by Tag name 
+
+  	document.getElementsByTagName('p')[0].innerHTML = "Changed";
+
+  	//querySelector
+  	document.querySelector('img').setAttribute('src','image.jpg'); 
+
+  	//querySelectorAll
+  	//document.querySelectorAll('.image')[0].setAttribute('src'.'image.jpg'); 
 
   </script>
   
