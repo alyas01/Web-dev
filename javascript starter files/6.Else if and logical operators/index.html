@@ -11,22 +11,28 @@
 
   <script>
 
-    // else if
-    // ==================
-    
-    var hungry = true;
-    var craving = 'Pizza';
+    /*
+      if(hungry) {
+        
+        if(craving === 'Pizza') {
+          alert('Gimme Pizza!!!');
+        } else if (craving === "Chinese") {
+          alert('Gimme Chinese'); 
+        }
+        else {
+          alert("Let's get any food!"); 
+        }
 
-    if(hungry) {
-      
-      if(craving === 'Pizza') {
-        alert('Gimme Pizza!!!');
       } else {
-        alert("Let's get any food!")
+        alert('Maybe later...');
       }
+    */
+    
+    var hungry = "Pizza";
+    var craving = 'Chicken';
 
-    } else {
-      alert('Maybe later...');
+    if(!hungry || craving == "Pizza"){
+      alert('Gimme Pizza'); 
     }
 
 
