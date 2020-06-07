@@ -12,11 +12,20 @@
 
   <script>
 
-    function hi() {
-      document.getElementById('text').innerHTML = 'Text from function';
+    function hi(name) {
+      document.getElementById('text').innerHTML = "Hi" + name; 
     }
 
-    hi();
+    
+
+    function multiply(num1, num2){
+            //document.getElementById('text').innerHTML = num1 * num2; 
+            return num1 * num2; 
+    }
+
+    hi('Misha');
+    var sum = multiply(23,15); 
+    console.log(sum); 
 
   
   </script>

@@ -12,11 +12,26 @@
 
   <script>
 
+    //adding an event listener 
+    var textElement = document.querySelector('p'); 
+    textElement.addEventListener('click', () => {
+      document.getElementById('text').style.color = "blue";
+    }); 
+    textElement.addEventListener('click', stopCopying); 
+
+
+    // Adding events for the values in HTML 
     var changeFontSize = () => {
       document.getElementById('text').style.fontSize = '34px';
+      document.getElementById('text').style.color = "blue"; 
+
     }
 
-    changeFontSize();
+    var stopCopying = () => {
+      alert('STOP Copying my Work'); 
+    }
+
+    //changeFontSize();
 
   </script>
   
