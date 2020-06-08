@@ -26,24 +26,31 @@
   
   <script>
 
-    // returns the position of word in the string:
+    let text = document.querySelector('p').innerHTML; 
 
+    // returns the position of word in the string:
+    //let newText = text.search("nisi");
+    //console.log(newText);  
     // Replace text with a string (case sensitive)
 
+    //let newText = text.replace('Lorem', 'Hi'); 
+    
     // Replace text with a regular expression, i modifier to perform case insensitive match
+    //let newText = text.replace(/lorem/i, 'Hi'); 
 
     // i modifier = replaces first match only
 
     // g modifier = replaces all matches
-
+    let newText = text.replace(/e/g, 'A'); 
 
     // Use square brackets to find any letter inside (first one only counts)
-
+    
     // Add g modifier to select all from letters inside of sq brackets
 
     // Use square brackets to find any number inside (first one only counts)
     
-    
+    console.log(newText); 
+
   </script>
 </body>
 </html>
